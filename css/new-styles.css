@@ -1064,7 +1064,19 @@ li {
         /*nalezy do index*/
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
+    .hamburger{
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+    }
     /*------------------------------- END OF HEADER -------------------------------------*/
     /*------------------- MAIN - EFFECTIVE SOLUTIONS FOR YOUR BUSINESS-------------------*/
     .section-one {
@@ -1096,9 +1108,9 @@ li {
         /*DO SPRAWDZENIA!!!*/
     }
 
-    .padding-index {
+    /*.padding-index {
         margin: 0px;
-    }
+    }*/
 
     .button-one {
         background-color: var(--iris-color);
@@ -1127,7 +1139,7 @@ li {
     }
 
     .button-margin {
-        margin-left: 75.5px; /*hw-07*/
+        margin-left: 129px; /*hw-07*/
         margin-top: 48px;
     }
 
@@ -1146,18 +1158,20 @@ li {
 
     /*------------------MAIN- SECTION-TWO- EMPTY-CONTAINER + OUR ADVANTAGES ------------------------------*/
     .header-two {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2; /*dać 40px jeżeli nie będzie wychodziło*/
         letter-spacing: 0.02em;
         color: var(--navy-blue-color);
-
+        width: 396px; /*hw-07*/
+        height: 40px;
+        text-align: center;
         /*nalezy do index*/
     }
 
     .list-section-two {
         list-style: none;
-        display: flex;
+        display: block;
         gap: 24px;
         /*dodano klasę do hw03*/
     }
@@ -1168,7 +1182,7 @@ li {
     }
 
     .div-icon-index {
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         height: 112px;
@@ -1182,11 +1196,14 @@ li {
         letter-spacing: 0.02em;
         color: var(--slate-color);
         /*nalezy do index*/
+        width: 396px; /*hw-07*/
+        margin-bottom: 60px;/*hw-07*/
     }
 
     /*---------------------------MAIN-SECTION THREE - WHAT ARE WE DOING-----------------------*/
     .section-three {
         padding-bottom: 120px;
+        display: none;
     }
 
     .header-three {
@@ -1219,13 +1236,19 @@ li {
         text-transform: capitalize;
         color: var(--navy-blue-color);
         margin-bottom: 72px;
-        /*nalezy do index*/
+        /*padding-right: 62px; -hw07*/
+        /*nalezy do index*/        
     }
-
+    .gap-twenty-four{
+        display: block; /*hw-07*/
+    }
     .markguerrero {
         background-color: var(--white-color);
         border-radius: 0px 0px 4px 4px;
         /*nalezy do index*/
+        width: 264px;
+        margin-bottom: 72px;
+        margin-left: 67px;/*hw07 dalem 82px*/
     }
 
     .box-shadow {
@@ -1298,7 +1321,7 @@ li {
     /*---------------------------MAIN-SECTION FIVE - CUSTOMERS-----------------------*/
     .section-five {
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 72px;/*hw-07*/
     }
 
     .customers {
@@ -1306,17 +1329,22 @@ li {
         line-height: 1.11;
         color: var(--navy-blue-color);
         margin-bottom: 72px;
-        padding-left: 472.5px;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
     }
 
     .customers-list {
         display: flex;
-        gap: 24px;
+        gap: 16px;
+        list-style: none;
+        flex-wrap: wrap-reverse;
     }
 
     .customers-logos {
-        width: calc((100% - 120px) / 6);
+        width: calc((100% - 16px) / 2);
         height: 88px;
+        margin-bottom: 44px;
     }
 
     .customers-link {
@@ -1353,13 +1381,15 @@ li {
         background-color: var(--navy-blue-color);
         letter-spacing: 0.02em;
         padding: 100px 0;
+        width: 428px;
     }
 
     .div-footer {
         display: flex;
-        align-items: baseline;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
-
     .footer-studio-index {
         color: var(--cloud-color);
         background-color: var(--navy-blue-color);
@@ -1369,11 +1399,83 @@ li {
         display: flex;
         gap: 16px;
     }
-
+    
+    .social-media-footer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    margin-bottom: 16px;
+    display: block;
+    text-align: center;
+    }
+.footer-link-style {
+    display: block;
+    margin: 0;
+    margin-bottom: 16px;
+    text-align: center;
+    }
+.akapit-footer{
+    margin: 0;
+    margin-bottom: 72px;
+    }
+.margin-right-eighty{
+    margin-right: 0px;
+    margin-bottom: 76px;
+    }
+    .margin-right{
+        margin-right: 0px;
+    }
     /*-------------------------FOOTER- FORMULAR-------------------------------------*/
     .label {}
+.input-formular {
+    width: 398px;
+    height: 40px;
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white-color);
+}
+.button-formular {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    cursor: pointer;
+    background-color: var(--iris-color);
+    border: none;
+    border-radius: 4px;
+    margin-left: 116px;
+    margin-top: 16px;
+}
 
-    /*------------------------------------- MODAL WINDOW ------------------------------------------------*/
+    .formular {
+            margin-top: 0;
+            display: block;
+        }
+    .p-formular {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    text-align: center;
+    }
+ /*------------------------------------- MODAL WINDOW ------------------------------------------------*/
     .modal {
         position: fixed;
         top: 0;
