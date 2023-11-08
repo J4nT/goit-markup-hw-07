@@ -203,7 +203,7 @@ li {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 189px; /*wcześniej było margin:0 margin-left-189px*/
+        margin:0;
         padding: 0;
         background-color: transparent;
         cursor: pointer;
@@ -218,7 +218,7 @@ li {
         width: 100vw;
         height: 100vh;
         padding: 80px 40px 40px;
-        background-color: var(--white-background);
+        background-color: var(--white-color);
         z-index: 999;
         transform: translateX(100%);
         transition: transform var(--tr-dur) var(--tr-fn);
