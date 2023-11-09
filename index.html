@@ -28,7 +28,7 @@
                     <li><a href="tel:+110001111111" class="link link-index">+11 (000) 111-11-11</a></li>
                 </ul>
         </address>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="menu-toggle js-open-menu button-hamburger" aria-expanded="false" aria-controls="mobile-menu">
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -92,9 +92,9 @@
         <div class="container">
         <h2 class="header-three">What are we doing</h2>
         <ul class="list gap-twenty-four">
-            <li class="style-three"><img src="./images/apples.jpg"  width="360" height="300" alt="Deskop apple"></li>
-            <li class="style-three"><img src="./images/whatsupp.jpg" width="360" height="300" alt="Whatsupp application"></li>
-            <li class="style-three"><img src="./images/phone.jpg" width="360" height="300" alt="Deskop of moblie phone"></li>
+            <li class="style-three"><img src="./images/apples.jpg"  width="360" height="300" alt="Deskop apple" srcset="./images/apples2x.jpg" x2 ></li>
+            <li class="style-three"><img src="./images/whatsupp.jpg" width="360" height="300" alt="Whatsupp application" srcset="./images/whatsupp@2x.jpg" x2></li>
+            <li class="style-three"><img src="./images/phone.jpg" width="360" height="300" alt="Deskop of moblie phone" srcset="./images/phone@2x.jpg" x2></li>
         </ul>
         </div>
     </section>
@@ -411,14 +411,14 @@
     </div>
     <!-------------------------------HAMBURGER---------------------------->
     <div class="menu-container js-menu-container is-open" id="mobile-menu">
-        <button class="close-button-menu js-close-menu">
+        <button class="close-hamburger js-close-menu">
             <svg class="close-button-svg-menu" width="8" height="8">
                 <use href="./images/icons.svg#icon-Vector"></use>
             </svg>
         </button>
         <nav class="nav">
             <ul class="mobile-menu">
-                <li><a href="" class="mobile-menu-link link">Studio</a></li>
+                <li><a href="" class="mobile-menu-link link studio-hamburger">Studio</a></li>
                 <li><a href="" class="mobile-menu-link link">Portfolio</a></li>
                 <li><a href="" class="mobile-menu-link link">Contacts</a></li>
             </ul>
@@ -426,7 +426,7 @@
         <address>
             <ul class="mobile-menu">
                 <li>
-                    <a href="tel:+110001111111" class="mobile-menu-link link">+11 (000) 111-11-11</a>
+                    <a href="tel:+110001111111" class="mobile-menu-link link address-hamburger">+11 (000) 111-11-11</a>
                 </li>
                 <li>
                     <a href="mailto:info@devstudio.com" class="mobile-menu-email link">info@devstudio.com</a>
@@ -434,30 +434,30 @@
             </ul>
         </address>
         <ul class="mobile-menu-socials-list">
-            <li class="menu-studio-socials-item">
-                <a class="menu-studio-socials-link" href="">
-                    <svg class="menu-studio-socials-svg" width="24" height="24">
+            <li class="li-social-media">
+                <a class="link-footer" href="">
+                    <svg class="svg-socials" width="24" height="24">
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                 </a>
             </li>
-            <li class="menu-studio-socials-item">
-                <a class="menu-studio-socials-link" href="">
-                    <svg class="menu-studio-socials-svg" width="24" height="24">
+            <li class="li-social-media">
+                <a class="link-footer" href="">
+                    <svg class="svg-socials" width="24" height="24">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                     </svg>
                 </a>
             </li>
-            <li class="menu-studio-socials-item">
-                <a class="menu-studio-socials-link" href="">
-                    <svg class="menu-studio-socials-svg" width="24" height="24">
+            <li class="li-social-media">
+                <a class="link-footer" href="">
+                    <svg class="svg-socials" width="24" height="24">
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                 </a>
             </li>
-            <li class="menu-studio-socials-item">
-                <a class="menu-studio-socials-link" href="">
-                    <svg class="menu-studio-socials-svg" width="24" height="24">
+            <li class="li-social-media">
+                <a class="link-footer" href="">
+                    <svg class="svg-socials" width="24" height="24">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
                 </a>
