@@ -248,8 +248,9 @@ li {
     
     .mobile-menu .link {
         display: block;
-        padding: 10px;
+        padding: 10px 0;
         text-decoration: none;
+        width: 353px;
     }
     .mobile-menu-link {
         display: block;
@@ -412,9 +413,14 @@ li {
     .style-section-index{
         width: 428px;
         margin: 0;
-        background-image: url(../images/people-office.jpg) x1
-        url(../images/Dark-bg@2xmobile.jpg) x2;
     }
+    @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx){   
+            .style-section-index{ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/people-officex2.jpg);}
+         }
 }
 /*-----------------------SECTION TWO---------*/
 .section-two {
@@ -1037,6 +1043,88 @@ li {
 /*--------------------------------MODAL WINDOW HAMBURGER------------------------------*/
 
 /*-----------------------------END OF INDEX-------------------------------------------*/
+@media screen and (min-width: 428px) and (max-width: 767px) {
+/* NOWE*/
+    .container {
+        width: 428px;
+    }
+
+    .input-formular {
+        width: 398px;
+    }
+
+    .modal-window {
+        width: 408px;
+    }
+
+    .hamburger-div {
+        margin: auto;
+        max-width: 428px;
+    }
+
+    .mobile-menu-social-list {
+
+        gap: 56px;
+        justify-content: flex-start;
+
+    }
+
+}
+/*---------------------------------------TABLET---------------------------------------*/
+@media screen and (min-width: 768px){
+.button-hamburger{
+    display: none;
+}
+.container{
+    width: 768px;
+    margin: 0;
+}
+.div{
+    height: 72px;
+}
+.address-top-index{
+    margin-right: 16px;
+    padding: 0;
+    margin-top: 16px;
+}
+.gap-forty{
+    display: block;
+}
+.link-index{
+    font-size: 12px;
+}
+.button-margin{
+    margin: auto;
+    margin-top: 36px;
+}
+.div-icon-index{
+    display: none;
+}
+.style-two{
+    width: 353px;
+}
+.list-section-two{
+    flex-wrap: wrap;
+}
+.header-two{
+    font-size: 36px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 /*---------------------------------------------START PORTFOLIO------------------------*/
 /*-----------------------------HEADER-------------------------------------------------*/
 .logo-studio {
