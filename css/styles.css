@@ -184,12 +184,12 @@ li {
 
     /* cały kod */
     .container {
-        width: 428px;
+        width: 100%;/*było 428px */
         margin: 0;
     }
-    .header{
+    /*.header{
         width: 428px;
-    }
+    } prawdopodonie mi to przeszkadza*/
     .menu {
         display: none;
         /*zmiana w porównaniu do oryginalnego kodu hw-07*/
@@ -281,7 +281,7 @@ li {
         display: flex;
         gap: 56px;
         margin-top: 48px;
-        max-width: 328px;
+        max-width: 100%;
     }
     .mobile-menu-socials-item{
         width: 40px;
@@ -396,7 +396,7 @@ li {
     background-color: var(--ocean-color);
 }
 /* ================================================= MOBILE 👇 ========================================= */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .header-one {
         font-size: 36px;/*zostało zmienione */
         line-height: 40px;
@@ -404,14 +404,15 @@ li {
         max-width: 320px;
     }
     .button-margin {
-        margin-left: 114px;/*hw-07*/
-        margin-top: 72px;
+        /*magin-left: 114px;/*hw-07*/
+        /*margin-top: 72px;*/
+        margin: auto;
     }
     .padding-index{
-        margin-left: 39px;;
+        margin-bottom: 72px;
     }
     .style-section-index{
-        width: 428px;
+        width: 100%; /*było 428px*/
         margin: 0;
     }
     @media (min-device-pixel-ratio: 2),
@@ -424,7 +425,7 @@ li {
 }
 /*-----------------------SECTION TWO---------*/
 .section-two {
-    padding: 120px 0;
+    padding: 96px 0;
     font-weight: 400;
 }
 .header-two {
@@ -461,24 +462,32 @@ li {
     /*nalezy do index*/
 }
 /* ================================================= MOBILE 👇 ========================================= */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .header-two{
         font-weight: 700;
         font-size: 36px;
-        width: 396px;/*hw-07*/
+        /*width: 396px;/*hw-07*/
         height: 40px;
         text-align: center;
     }
     .list-section-two {
-        display: block;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section-two{
+    padding: 96px 0 24px 0;
+    }
     .akapit-two{
-        width: 396px;
-        margin-bottom: 60px;
+        /*width: 396px;*/
+        margin-bottom: 72px;
     }
     .div-icon-index {
     display: none;
 }
+    .style-two{
+        width:100%
+    }
 }
 /*-------------------------SECTION THREE- WHAT ARE WE DOING */
 .section-three {
@@ -498,7 +507,7 @@ li {
     flex-basis: calc((100%-3*16px)/3);
 }
 /* ================================================= MOBILE 👇 ========================================= */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .section-three {
         display: none;
         }
@@ -583,21 +592,29 @@ li {
         /*hw-04 + FOOTER*/
 }
 /* ================================================= MOBILE 👇 ========================================= */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .container{
-        width: 428px;
-        margin: 0;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
     }
     .markguerrero {
         width: 264px;
-        margin-bottom: 72px;
+        margin: auto;
+        /*margin-bottom: 72px;
         margin-left: 67px;/*hw07 dalem 82px*/
     }
     .gap-twenty-four{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
     }
     .section-four{
-        width: 428px;
+        width: 100%;
+        padding-top: 96px;
+    }
+    .header-four{
+        /*padding-left: 82px;*/
     }
 }
 /*---------------------------SECTION FIVE - CUSTOMERS-------------*/
@@ -649,7 +666,7 @@ li {
     fill: currentColor;
 }
 /* ================================================= MOBILE 👇 ========================================= */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .section-five{
         padding-bottom: 72px;/*hw-07*/
     }
@@ -729,9 +746,9 @@ li {
     background-color: var(--green-color);
 }
 /* ================================================= MOBILE 👇 ========================================= */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .footer-index {
-        width: 428px;
+        width: 100%;
     }
     .div-footer {
         display: flex;
@@ -813,7 +830,7 @@ li {
     margin-left: 16px;
 }
 /* ================================================= MOBILE 👇 ========================================= */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .formular {
         margin-top: 0;
         display: block;
@@ -828,10 +845,16 @@ li {
         text-align: center;
     }
     .form-formular{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
     }
     .input-formular{
-        width: 398px;
+        width: 100%;
+    }
+    .button-formular{
+        margin: auto;
     }
 }
 /*-----------------------------------------END OD FOOTER--------------------------*/
@@ -1041,6 +1064,7 @@ li {
 }
 /*-----------------------------------------------END OF MODAL WINDOW------------------*/
 /*-----------------------------END OF INDEX-------------------------------------------*/
+/*-------------------------------------------SPACE BETWEEN----------------------------*/
 @media screen and (min-width: 428px) and (max-width: 767px) {
 /* NOWE*/
     .container {
@@ -1061,13 +1085,12 @@ li {
     }
 
     .mobile-menu-social-list {
-
         gap: 56px;
         justify-content: flex-start;
-
     }
 
 }
+
 /*---------------------------------------TABLET---------------------------------------*/
 @media screen and (min-width: 768px){
 .button-hamburger{
@@ -1082,6 +1105,7 @@ li {
 }
 .logo{
     margin-right: 120px;
+    margin-left: 1px;
 }
 .address-top-index{
     display: flex;
@@ -1089,6 +1113,7 @@ li {
     gap: 12px;
     margin-right: 16px;
     align-items: center;
+    padding-left: 122px;
 }
 .gap-forty{
     display: block;
@@ -1100,8 +1125,20 @@ li {
     margin: auto;
     margin-top: 36px;
 }
+.style-section-index{
+    width: 100%;
+}
 .div-icon-index{
     display: none;
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .style-section-index {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-officex2.jpg);
+    }
 }
 .style-two{
     width: 353px;
@@ -1139,6 +1176,7 @@ li {
 }
 .section-four{
     padding: 120px 0 32px 0;
+    width:100%;
 }
 .customers{
     padding-left: 293px;
@@ -1149,6 +1187,9 @@ li {
 }
 .customers-logos{
     width: 168px;
+}
+.footer-index{
+    width: 100%;
 }
 .div-footer{
     margin-left: 108px;
@@ -1368,10 +1409,9 @@ li {
             box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 1px 6px rgba(46, 47, 66, 0.08);
-            width: 1440px;
             margin: auto;
         }
-    
+        
         .div {
             display: flex;
         }
@@ -1417,7 +1457,15 @@ li {
             /*nalezy do index*/
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .style-section-index {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                    url(../images/people-officex2.jpg);
+            }
+        }
         /*------------------------------- END OF HEADER -------------------------------------*/
         /*------------------- MAIN - EFFECTIVE SOLUTIONS FOR YOUR BUSINESS-------------------*/
         .section-one {
