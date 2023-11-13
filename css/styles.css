@@ -608,6 +608,7 @@ li {
         display: flex;
         flex-direction: column;
         gap: 72px;
+        justify-content: center;
     }
     .section-four{
         width: 100%;
@@ -880,7 +881,7 @@ li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
+    width: 290px;
     min-height: 584px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -1098,7 +1099,7 @@ li {
 }
 .container{
     width: 768px;
-    margin: 0;
+    margin: 0 auto;
 }
 .div{
     height: 72px;
@@ -1163,16 +1164,17 @@ li {
 .gap-twenty-four{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .position{
     width: 264px;
     margin-bottom: 64px;
 }
 .margin-section-four{
-    margin-left: 108px;
+    margin-left: none;
 }
 .header-four{
-    margin-right: 167px;
+    margin-right: none;
 }
 .section-four{
     padding: 120px 0 32px 0;
@@ -1192,7 +1194,7 @@ li {
     width: 100%;
 }
 .div-footer{
-    margin-left: 108px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .margin-right{
@@ -1266,6 +1268,7 @@ li {
     
         .gap-twenty-four {
             gap: 24px;
+            justify-content: center;
         }
     
         .visually-hidden {
@@ -1625,6 +1628,7 @@ li {
         }
         .gap-twenty-four{
             margin-top: 72px;
+            justify-content: center;
         }
         .margin-section-five{
             margin-top: 0;
